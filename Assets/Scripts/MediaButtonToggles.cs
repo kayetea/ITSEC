@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class MediaButtonToggles : MonoBehaviour {
 
-    public void ToggleVisibility(GameObject toggleObject)
+	public void ToggleVisibility(GameObject toggleObject)
 	{
 		Debug.Log ("enter toggle visibility");
 		if (toggleObject.activeSelf)
@@ -37,7 +38,7 @@ public class MediaButtonToggles : MonoBehaviour {
 			}
 			else{
 				//change state
-				animControl.CrossFade(animState, 0f);
+				animControl.CrossFade(animState, .1f);
 			}
 		}
 		//check of animation component
