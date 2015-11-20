@@ -45,6 +45,23 @@ ModelImporter:
     100074: thinCyl004
     100076: thinCyl005
     100078: thinCyl007
+    100080: Bone003
+    100082: Bone004
+    100084: Bone005
+    100086: Bone006
+    100088: Bone007
+    100090: Bone008
+    100092: Bone009
+    100094: Bone010
+    100096: pt-helper-btm-cyln001
+    100098: pt-helper-btm-cyln002
+    100100: pt-helper-btm-cyln003
+    100102: pt-helper-top-cyln001
+    100104: pt-helper-top-cyln002
+    100106: pt-helper-top-cyln003
+    100108: pt-helper-vert001
+    100110: pt-helper-vert002
+    100112: pt-helper-vert003
     400000: 3armPlate
     400002: base
     400004: basebase
@@ -85,6 +102,23 @@ ModelImporter:
     400074: thinCyl004
     400076: thinCyl005
     400078: thinCyl007
+    400080: Bone003
+    400082: Bone004
+    400084: Bone005
+    400086: Bone006
+    400088: Bone007
+    400090: Bone008
+    400092: Bone009
+    400094: Bone010
+    400096: pt-helper-btm-cyln001
+    400098: pt-helper-btm-cyln002
+    400100: pt-helper-btm-cyln003
+    400102: pt-helper-top-cyln001
+    400104: pt-helper-top-cyln002
+    400106: pt-helper-top-cyln003
+    400108: pt-helper-vert001
+    400110: pt-helper-vert002
+    400112: pt-helper-vert003
     2300000: 3armPlate
     2300002: base
     2300004: basebase
@@ -117,6 +151,7 @@ ModelImporter:
     2300058: thinCyl004
     2300060: thinCyl005
     2300062: thinCyl007
+    2300064: Line001
     3300000: 3armPlate
     3300002: base
     3300004: basebase
@@ -149,6 +184,7 @@ ModelImporter:
     3300058: thinCyl004
     3300060: thinCyl005
     3300062: thinCyl007
+    3300064: Line001
     4300000: basebase
     4300002: btmCirclePlateSm
     4300004: ipt2_shell

@@ -6,11 +6,12 @@ public class ChangeScreen : MonoBehaviour {
 
 	public GameObject currentScreen;
 	public GameObject newScreen;
+	public string productName;
 
 
 	void Start () {
 		//start with 3d content
-		GameObject instance = this.Instantiate(Resources.Load("ContentHolders/3dContent", typeof(GameObject))) as GameObject;
+		GameObject instance = this.Instantiate(Resources.Load(productName + "/ContentHolders/3dContent", typeof(GameObject))) as GameObject;
 		instance.transform.SetParent (this.transform, false);
 	}
 
@@ -24,7 +25,7 @@ public class ChangeScreen : MonoBehaviour {
 		}
 
 		//add screenName with contentholder
-		screenName = "ContentHolders/" + screenName;
+		screenName = productName + "/ContentHolders/" + screenName;
 
 		//load called content
 		GameObject instance = this.Instantiate(Resources.Load(screenName, typeof(GameObject))) as GameObject;
