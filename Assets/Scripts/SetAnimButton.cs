@@ -12,7 +12,14 @@ public class SetAnimButton : MonoBehaviour {
 	void Start () {
 		modelHolder = GameObject.Find ("ModelHolder");
 
-		toggleScript = modelHolder.transform.GetChild(0).GetComponent<MediaButtonToggles>() as MediaButtonToggles;
+		if(modelHolder.transform.GetChild(0).name == "GameObject")
+		{
+			toggleScript = modelHolder.transform.GetChild(0).transform.GetChild(0).GetComponent<MediaButtonToggles>() as MediaButtonToggles;
+		}
+		else{
+			toggleScript = modelHolder.transform.GetChild(0).GetComponent<MediaButtonToggles>() as MediaButtonToggles;
+		}
+
 		Debug.Log(toggleScript);
 		this.GetComponent<Button>().onClick.AddListener( () => {toggleScript.ToggleAnimation(animName); });
 		this.GetComponent<Button>().onClick.AddListener( () => {MoveTriangle();});
