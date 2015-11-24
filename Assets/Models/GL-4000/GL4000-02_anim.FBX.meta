@@ -55,7 +55,8 @@ ModelImporter:
     4300014: roll
     4300016: pitch
     4300018: roll_blue
-    7400000: gl4000_anim
+    7400000: 3Gs
+    7400002: 6Gs
     9500000: //RootNode
     11100000: //RootNode
   materials:
@@ -75,7 +76,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: gl4000_anim
+      name: 3Gs
       takeName: Take 001
       firstFrame: 0
       lastFrame: 600
@@ -84,6 +85,52 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 1
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: baseCovering
+        weight: 1
+      - path: planetary
+        weight: 1
+      - path: planetary/handles
+        weight: 1
+      - path: planetary/metalSheet
+        weight: 1
+      - path: planetary/yaw
+        weight: 1
+      - path: planetary/yaw/roll
+        weight: 1
+      - path: planetary/yaw/roll/pitch
+        weight: 1
+      - path: planetary/yaw/roll/roll_blue
+        weight: 1
+      - path: planetary/yaw/yaw_silver
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: 6Gs
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 123
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
@@ -144,7 +191,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     human: []
     skeleton: []
@@ -155,7 +202,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: baseCovering
+    rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: c0e8c18c364967843ae4362ec8451544,
     type: 3}
   animationType: 2

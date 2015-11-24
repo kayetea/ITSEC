@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 9846c623acc50564bb48c7a2c140847f
-timeCreated: 1447850642
+guid: 86f11d8d89de0354ab25db55007eafde
+timeCreated: 1448375569
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -73,7 +73,7 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
@@ -108,23 +108,23 @@ ModelImporter:
         weight: 1
       - path: base
         weight: 1
-      - path: basePole
+      - path: base/ArmAxis
+        weight: 1
+      - path: base/ArmAxis/ArmCovering
+        weight: 1
+      - path: base/ArmAxis/ArmCovering/ArmEnd
+        weight: 1
+      - path: base/ArmAxis/ArmCovering/ArmEnd/rollBLue
+        weight: 1
+      - path: base/ArmAxis/ArmCovering/ArmEnd/rollBLue/PitchCustom
+        weight: 1
+      - path: base/ArmAxis/ArmCovering/ArmEnd/rollBLue/rollChrome
+        weight: 1
+      - path: base/ArmAxis/ArmCovering/ArmEnd/rollBLue/rollWhite
+        weight: 1
+      - path: base/basePole
         weight: 1
       - path: WholeArm
-        weight: 1
-      - path: WholeArm/ArmAxis
-        weight: 1
-      - path: WholeArm/ArmAxis/ArmCovering
-        weight: 1
-      - path: WholeArm/ArmAxis/ArmCovering/ArmEnd
-        weight: 1
-      - path: WholeArm/ArmAxis/ArmCovering/ArmEnd/rollBLue
-        weight: 1
-      - path: WholeArm/ArmAxis/ArmCovering/ArmEnd/rollBLue/PitchCustom
-        weight: 1
-      - path: WholeArm/ArmAxis/ArmCovering/ArmEnd/rollBLue/rollChrome
-        weight: 1
-      - path: WholeArm/ArmAxis/ArmCovering/ArmEnd/rollBLue/rollWhite
         weight: 1
       - path: WholeArm/Roll
         weight: 1
@@ -142,7 +142,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -194,7 +194,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -246,7 +246,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -325,7 +325,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   additionalBone: 0
   userData: 
   assetBundleName: 
