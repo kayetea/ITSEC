@@ -214,8 +214,9 @@ ModelImporter:
     4300060: Cylinder002
     4300062: Cylinder003
     4300064: Cylinder001
-    7400000: Take 001
+    7400000: ipt-anim
     9500000: //RootNode
+    11100000: //RootNode
     13700000: Cylinder001
     13700002: Line001
     13700004: Cylinder002
@@ -237,11 +238,11 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: ipt-anim
       takeName: Take 001
       firstFrame: 0
       lastFrame: 1000
-      wrapMode: 0
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -403,7 +404,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

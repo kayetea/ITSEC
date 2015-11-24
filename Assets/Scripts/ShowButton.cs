@@ -26,12 +26,12 @@ namespace Vuforia{
 
 		public GameObject modelUI;
 		public GameObject targetModel;
-		private int stackOrder;
+		/*private int stackOrder;
 		private List<Vector2> uiDimensions = new List<Vector2>();
 		private Vector2 stackOrder1 = new Vector2(1920, 250);
 		private Vector2 stackOrder2 = new Vector2(1920, 700);
 		private Vector3 stackOrder3 = new Vector2(1920, 1200);
-		private int visibleBars = 0;
+		private int visibleBars = 0;*/
 
 		private PlayButton playButton;
 
@@ -49,9 +49,9 @@ namespace Vuforia{
 			}
 
 			//set dimeninsions up
-			uiDimensions.Add(stackOrder1);
+			/*uiDimensions.Add(stackOrder1);
 			uiDimensions.Add(stackOrder2);
-			uiDimensions.Add(stackOrder3);
+			uiDimensions.Add(stackOrder3);*/
 
 		}
 
@@ -60,7 +60,7 @@ namespace Vuforia{
 			// if visibles bars previous is larger than current, shift everything up one
 			//if there's only 1 item, make sure it's zeroed out
 
-			if(visibleBars > 1)
+			/*if(visibleBars > 1)
 			{
 				if (GameObject.FindGameObjectsWithTag("UI-bar").Length == 0)
 				{
@@ -74,7 +74,7 @@ namespace Vuforia{
 				{
 					modelUI.GetComponent<RectTransform>().sizeDelta = uiDimensions[stackOrder-2];
 				}
-			}
+			}*/
 		}
 		
 		public void OnTrackableStateChanged(
@@ -88,7 +88,7 @@ namespace Vuforia{
 				modelUI.SetActive(true);
 
 				//check if other UIs are active, adjust accordingly
-				visibleBars = GameObject.FindGameObjectsWithTag("UI-bar").Length;
+				/*visibleBars = GameObject.FindGameObjectsWithTag("UI-bar").Length;
 
 				if (visibleBars == 2)
 				{
@@ -99,7 +99,7 @@ namespace Vuforia{
 				{
 					stackOrder = 3;
 					modelUI.GetComponent<RectTransform>().sizeDelta = uiDimensions[stackOrder-1];
-				}
+				}*/
 			}
 			else
 			{
@@ -107,7 +107,7 @@ namespace Vuforia{
 				modelUI.SetActive(false);
 
 				//reset UI location
-				modelUI.GetComponent<RectTransform>().sizeDelta = stackOrder1;
+				//modelUI.GetComponent<RectTransform>().sizeDelta = stackOrder1;
 
 				//if playing animation, stop animation, change icon
 				playButton = targetModel.GetComponent<PlayButton>();
