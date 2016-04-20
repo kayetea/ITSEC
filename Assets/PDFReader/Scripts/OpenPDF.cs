@@ -7,17 +7,19 @@ using IndieYP;
 public class OpenPDF : MonoBehaviour 
 {
 	public string namePDF;
-	private string streamingPdf = "";
-	private string localHTML = "";
+	private string streamingPdf;
+    //private string localHTML = "";
 
-
+    public GoogleAnalyticsV4 googleAnalytics;
 
 	void Start()
 	{
 		//BUILD PDF PATH FROM STREAMING ASSETS 
 		streamingPdf = PDFReader.AppDataPath + "/" + namePDF + ".pdf";
-		//localHTML = PDFReader.AppDataPath + "/" +"main.html";
-	}
+        //localHTML = PDFReader.AppDataPath + "/" +"main.html";
+
+        googleAnalytics = GameObject.Find("GAv4").GetComponent<GoogleAnalyticsV4>();
+    }
 
 	public void ExternalOpenPDF()
 	{
@@ -29,6 +31,7 @@ public class OpenPDF : MonoBehaviour
 		#endif
 
 		Debug.Log("OPEN PDF");
+        googleAnalytics.LogEvent("Literature", namePDF, namePDF, 1);
 	}
 
 }

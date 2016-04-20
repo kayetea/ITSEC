@@ -1,29 +1,16 @@
-﻿/*------------------------------------------------------
-Project: AR_test
-Program: QuitApp.cs
-Author: Katelyn Godfrey
-
-Description: Close application when X button is pressed.
-
-Updated: 05/28/2015 
-------------------------------------------------------
-
-ADDED TO ARCAMERA GAME OBJECT.
-
-ON QUIT_BTN ON CLICK TELL IT TO TRIGGER QUITAPP.EXIT.
-
-------------------------------------------------------*/
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class SceneLoad : MonoBehaviour {
 
 	public string sceneName;
 
+    private GoogleAnalyticsV4 googleAnalytics;
+
 	// Use this for initialization
 	void Start () {
-	
+        googleAnalytics = GameObject.Find("GAv4").GetComponent<GoogleAnalyticsV4>();
 	}
 	
 	public void Exit() {
@@ -31,12 +18,15 @@ public class SceneLoad : MonoBehaviour {
 	}
 
 	public void ChangeScene(){
-		Application.LoadLevel(sceneName);
+        SceneManager.LoadScene(sceneName);
 		Resources.UnloadUnusedAssets ();
+
+        googleAnalytics.LogScreen(sceneName);
 	}
 
 	public void OnMouseDown(){
-		Application.LoadLevel(sceneName);
-		Resources.UnloadUnusedAssets ();
-	}
+        SceneManager.LoadScene(sceneName);
+        Resources.UnloadUnusedAssets ();
+        googleAnalytics.LogScreen(sceneName);
+    }
 }

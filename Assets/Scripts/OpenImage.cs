@@ -1,18 +1,4 @@
-﻿/*------------------------------------------------------
-Project: AR_test
-Program: OpenImage.cs
-Author: Katelyn Godfrey
-
-Description: 
-
-Updated: 06/02/2015 
-------------------------------------------------------
-
-ADD TO PANEL. ASSIGN IMAGES AS NEEDED.
-
-------------------------------------------------------*/
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -24,11 +10,15 @@ public class OpenImage: MonoBehaviour{
 
 	private GameObject homePrevBtn;
 
+    private GoogleAnalyticsV4 googleAnalytics;
 
-	void Start() {
+
+    void Start() {
 		//currentImage = 0;
-		rawImage.texture = imageArray[currentImage]; 
-	}
+		rawImage.texture = imageArray[currentImage];
+
+        googleAnalytics = GameObject.Find("GAv4").GetComponent<GoogleAnalyticsV4>();
+    }
 
 	void Update(){
 		if (Input.GetKeyUp("left"))
@@ -53,11 +43,15 @@ public class OpenImage: MonoBehaviour{
 	public void EnablePanel(int buttonImage){
 		panel.SetActive(true);
 		currentImage = buttonImage;
-		rawImage.texture = imageArray[currentImage];	
+		rawImage.texture = imageArray[currentImage];
 
-		/*disable previous button
+        /*disable previous button
 		homePrevBtn = GameObject.Find("HomePrev");
 		homePrevBtn.SetActive(false);*/
+
+        Debug.Log(rawImage);
+
+        //googleAnalytics.LogEvent("Open Image", )
 	}
 
 	//Close Panel
