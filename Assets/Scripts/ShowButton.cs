@@ -101,7 +101,7 @@ namespace Vuforia{
 					modelUI.GetComponent<RectTransform>().sizeDelta = uiDimensions[stackOrder-1];
 				}*/
 			}
-			else
+			else if (modelUI != null)
 			{
 				//if image target lost, hide UI
 				modelUI.SetActive(false);
